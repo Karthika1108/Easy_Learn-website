@@ -2,12 +2,14 @@ header{
     background-color: #114d94;
     height: 100px;
 }
+
 li{
     float: left;
-    background-color:#114d94;
+    margin-top: 30px;
     margin-right: 45px;
 }
 li a{
+    margin-top: 20px;
     display:inline;
     padding: 20px; 
     background-color:#114d94;
@@ -18,8 +20,13 @@ li a{
     font-weight: 700;
 }
 ul{
+    margin-top: 0px;
     list-style-type: none;
     padding: 30px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    
 }
 li a:hover{
     color: black;
@@ -34,13 +41,15 @@ li a :active{
 .back{
     height: 700px;
     width: 100%;
-    filter:blur(3px)
+    filter:blur(3px);
+    margin-bottom: 0px;
 }
 
 .container{
     position: relative;
     text-align: center;
-
+   margin-bottom: 0px;
+   margin-top: 0px;
 }
 .quote{
     position: absolute;
@@ -49,14 +58,17 @@ li a :active{
     color: white;
     font-size: 50px;
     font-family: 'brush Script MT',cursive;
+    margin-bottom: 0px;
 }
 .box{
     display: flex;
+    flex-wrap: row wrap;
     padding: 0px;
     text-align: center;
+    margin-top: 0px;
 }
 .smallBox{
-   margin: 1px;
+   margin-left: 1px;
    padding: 20px;
    font-size: 30px;
     border: 0px solid navy;
@@ -64,8 +76,9 @@ li a :active{
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    height: 380px;
-   width: 100%;
-
+   width: 800px;
+   margin-top: 0px;
+   margin-bottom: 1px;
 }
 .button{
     font-size: 20px;
@@ -83,6 +96,10 @@ li a :active{
     margin-right: 50px;
     width: 375px;
 }
+.imgHome:hover{
+     width: 400px ;
+     height: 240px;
+}
 .button:hover{
     height: 45px;
     width: 155px;
@@ -95,7 +112,7 @@ footer{
     background-color: #81b4f1;
     color: black;
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
 }
 .login{
     border: 20px groove #81b4f1;
@@ -136,6 +153,10 @@ footer{
     font-size: 25px;
     text-decoration: none;
 }
+.login >input[type=radio]{
+     height: 20px;
+     width: 40px;
+}
 .create  {
     text-decoration: none;
     text-align: center;
@@ -155,6 +176,9 @@ footer{
     font-weight: lighter;
     font-stretch: extra-condensed;
 }
+.create > a:hover{
+    font-size: 25px;
+}
 .outer{
     border: 2px solid ;
     border: 10px solid #81b4f1;
@@ -163,4 +187,22 @@ footer{
     margin-top: 50px;
     width: 750px;
     height: 568px;
+}
+.login > select{
+    height: 55px;
+    width: 220px;
+    margin-left: 230px;
+    text-align: center;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+.login > input[type=number]{
+    height: 55px;
+    width: 220px;
+    margin-left: 230px;
 }
