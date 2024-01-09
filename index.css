@@ -15,9 +15,7 @@ li a{
     background-color:#114d94;
     color: white;
     text-decoration: none;
-    font-size: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 700;
+    
 }
 ul{
     margin-top: 0px;
@@ -33,6 +31,39 @@ li a:hover{
 }
 li a :active{
     color: black;
+}
+div.one{
+    background-color:#114d94;
+    overflow: auto;
+    white-space:nowrap;
+}
+div.one a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    margin-right: 60px;
+    
+}
+div.one a:hover{
+    color: black;
+}
+.large{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     overflow: auto;
+     white-space: nowrap;
+}
+.small{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: auto;
+    display: inline-block;
 }
 .top{
     font-size: 35px;
@@ -61,13 +92,19 @@ li a :active{
     margin-bottom: 0px;
 }
 .box{
-    display: flex;
-    flex-wrap: row wrap;
     padding: 0px;
     text-align: center;
     margin-top: 0px;
+    display: flex;
+    flex-flow: row  wrap;
+    align-items: center;
+    
 }
 .smallBox{
+    align-items: center;
+    flex: 30%;
+    height: 430px;
+    width: 600px;
    margin-left: 1px;
    padding: 20px;
    font-size: 30px;
@@ -75,11 +112,12 @@ li a :active{
     background-color: #114d94;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   height: 380px;
-   width: 800px;
    margin-top: 0px;
    margin-bottom: 1px;
+   line-height: normal;
+   overflow:auto;
 }
+
 .button{
     font-size: 20px;
     background-color: rgb(3, 45, 94);
@@ -88,17 +126,24 @@ li a :active{
     width: 150px;
     height: 40px;
     margin-top: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .imgHome{
-    height: 220px;
+    padding: 20px;
+   height: 200px;
     margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    width: 375px;
+    margin-left:auto;
+    margin-right: auto;
+    width: 200px;
+    border: 0px solid black;
+    display: block;
+   
+    
 }
 .imgHome:hover{
-     width: 400px ;
-     height: 240px;
+     width: 250px ;
+     height: 220px;
 }
 .button:hover{
     height: 45px;
@@ -127,6 +172,8 @@ footer{
     color: #114d94;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 1000;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 .login > input{
@@ -187,6 +234,8 @@ footer{
     margin-top: 50px;
     width: 750px;
     height: 568px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .login > select{
     height: 55px;
