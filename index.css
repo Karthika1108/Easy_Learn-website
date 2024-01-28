@@ -137,9 +137,7 @@ div.one a:hover{
     margin-right: auto;
     width: 200px;
     border: 0px solid black;
-    display: block;
-   
-    
+    display: block;   
 }
 .imgHome:hover{
      width: 250px ;
@@ -232,10 +230,12 @@ footer{
     background-color: #81b4f1;
     margin-left: 600px;
     margin-top: 50px;
-    width: 750px;
+    width: 730px;
     height: 568px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: row;
 }
 .login > select{
     height: 55px;
@@ -259,4 +259,7 @@ footer{
    
    width: 100%;
 }
+.inner{
+    display: flex;
 
+}

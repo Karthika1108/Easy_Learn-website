@@ -19,13 +19,22 @@
             </div>
                 </header>
             <div style="height: 700px;" class="outer">
-                <div >
+                <div  >
                     <form style="height: 650px;" class="login">
                       <p class="top" style=" text-align: center; color: black;"><span style="  font-family:'brush Script MT',cursive;font-size: 50px;font-weight: 1000;color: black;">L</span>earn Easy <br>Sign Up</p>
-                        <input type="text" name="uName" id="uName" placeholder="Enter User Name">
+                       
+                      <input type="text" name="uName" id="uName" placeholder="Enter User Name">
+                      <div id="error"></div>
+                   
                         <input type="email" name="email" id="email" placeholder="Email Address or username"><br>
+                        <div id="error"></div>
+                    
                         <input type="password" name="password" id="password" placeholder=" Set Password"><br>
+                        <div id="error"></div>
+                   
                         <input  type="tel" name="phone" id="phone" placeholder="+91 xxx-xxx-xxxx"><br>
+                        <div id="error"></div>
+                    
                         <input type="number" name="age" id="age" min="10" max="60 " placeholder="Enter age">
                         <select id="course">
                             <option >Front End Technology</option>
@@ -36,7 +45,8 @@
                             <option>Programming</option>
                             </select>
                         </span>
-                       
+                        <div id="error"></div>
+            
                         <input type="submit" value="Sign Up"><br>
                     </form>
                 </div>
